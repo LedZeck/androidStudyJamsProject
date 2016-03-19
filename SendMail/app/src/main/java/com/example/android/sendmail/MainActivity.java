@@ -32,9 +32,6 @@ public class MainActivity extends AppCompatActivity {
 
         String finalMessage = message + "\n\nSent from my Android Study Jams Project";
 
-
-        Log.v("Wololo", "Simbora!!!");
-
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("message/rfc822");
         intent.putExtra(Intent.EXTRA_EMAIL  , new String[]{address});
